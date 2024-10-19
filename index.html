@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=aN0AWThBJ5PL&format=png&color=000000"
+      type="image/x-icon"
+    />
+
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Custom Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#0E7A81",
+              "gray-clr": "#131313",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- CSS Styles -->
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+
+      .active {
+        border: 1px solid #0e7a81;
+        color: #0e7a81;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+
+  <body class="lato-font text-gray-clr">
+    <!-- Header Section Start Here -->
+
+    <header class="mb-8 w-11/12 mx-auto">
+      <div id="nav" class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="flex gap-2 items-center cursor-pointer">
+            <img class="w-7 h-full" src="images/logo.webp" alt="" />
+            <h4 class="font-black text-3xl"><a href="index.html">Peddy</a></h4>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-color">
+            <li>
+              <a href="index.html"
+                class="font-bold hover:bg-primary-color hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a 
+                class="font-bold hover:bg-primary-color hover:text-white"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a 
+                class="font-bold hover:bg-primary-color hover:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img
+            class="w-[30px] cursor-pointer"
+            src="https://img.icons8.com/?size=100&id=7820&format=png&color=000000"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Header Section Ends Here -->
+
+    <!-- Main Section Start Here -->
+    <main>
+      <!-- Hero Section Start Here -->
+      <section class="flex flex-col text-center mb-20">
+        <p class="text-gray-clr text-opacity-60 font-bold text-xl mb-6">
+          Bringing Families Together ❤️
+        </p>
+        <h1 class="font-black text-4xl md:text-5xl mb-4 w-4/5 md:w-2/5 mx-auto">
+          Your Path to Adoption Starts Here
+        </h1>
+        <p class="w-4/5 md:w-3/5 mx-auto font-semibold">
+          Find your new best friend today! Explore our range of pets looking for loving homes. It's easy to start your adoption journey with us and make a lasting difference in a pet's life. Join us and discover the joy of pet adoption.
+        </p>
+        <div
+          class="btn w-[150px] mx-auto mt-8 bg-primary-color text-white hover:bg-white hover:border-primary-color hover:text-primary-color"
+        >
+          <a id="scrollBtn">View More</a>
+        </div>
+        <img class="w-4/5 md:w-3/5 mx-auto" src="images/pet.webp" alt="" />
+      </section>
+      <!-- Hero Section Ends Here -->
+
+      <!-- Adopt Your Best Friend Section Start Here -->
+
+      <section id="targetSection" class="mb-20 w-11/12 mx-auto">
+        <div class="text-center w-4/5 mx-auto">
+          <h1 class="font-black text-4xl mb-4">Adopt Your Best Friend</h1>
+          <p class="text-gray-clr text-opacity-70">
+            Discover the joy of adopting a pet and bringing home a loyal companion. Our shelter is full of amazing animals waiting for a loving family. Start your journey today and find your new best friend!
+          </p>
+        </div>
+
+        <!-- Category Section -->
+        <div
+          id="categories"
+          class="mt-8 grid grid-cols-2 md:grid-cols-4 text-center gap-4"
+        ></div>
+
+        <!-- Sort Btn section -->
+        <div class="w-11/12 mx-auto mt-8 md:flex justify-between text-center">
+          <div>
+            <h2 class="font-black text-2xl mb-2 md:mb-0">Best Deal For you</h2>
+          </div>
+
+          <div>
+            <div
+              id="sort-btn"
+              class="btn bg-primary-color text-white font-bold text-lg hover:bg-transparent hover:border-teal-900 hover:text-primary-color"
+            >
+              Sort by Price
+            </div>
+          </div>
+        </div>
+
+        <!-- display Pets Section -->
+        <div class="md:grid grid-cols-12 w-11/12 gap-5 mx-auto mt-8">
+          <div
+            id="pet-container"
+            class="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-span-9 gap-6"
+          ></div>
+          <div class="mb-5 col-span-3 border border-gray-200 rounded-xl p-3">
+            <div id="liked-cats-heading" class="flex items-center justify-between">
+              <h1 class="font-bold text-lg">
+                Your Liked Images
+              </h1>
+              <img class="w-8" src="https://img.icons8.com/?size=100&id=F36PfsGshrpo&format=png&color=000000" alt="">
+            </div>
+            <div id="liked-pets" class="grid grid-cols-2 gap-6 justify-items-center">
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center text-center">
+          <span id="spinner" class=" hidden loading loading-bars loading-lg w-12"></span>
+        </div>
+      </section>
+
+      <!-- Adopt Your Best Friend Section Ends Here -->
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- Footer Start Here -->
+
+    <footer id="footer" class="bg-gray-clr text-white lg:flex p-16 justify-between">
+      <div class="mb-8">
+        <div class="flex items-center gap-2 mb-6">
+          <img class="w-7 h-full" src="images/logo.webp" alt="" />
+          <p class="font-black text-3xl">Peddy</p>
+        </div>
+        <div class="space-y-2 text-opacity-90">
+          <p class="">Location: av. Washington 165, NY CA 54003</p>
+          <p>Phone: +31 85 964 47 25</p>
+          <p>Email: peddy.info@gmail.com</p>
+          <p>Openings hours: 9.00 AM - 5.00 PM</p>
+        </div>
+
+        <!-- social media icons -->
+        <div class="flex gap-4 w-[50px] mt-2">
+          <img
+            class="w-[30px] h-[30px] cursor-pointer"
+            src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
+            alt=""
+          />
+          <img
+            class="w-[30px] h-[30px] cursor-pointer"
+            src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+            alt=""
+          />
+          <img
+            class="w-[30px] h-[30px] cursor-pointer"
+            src="https://img.icons8.com/?size=100&id=111056&format=png&color=000000"
+            alt=""
+          />
+          <img
+            class="w-[30px] h-[30px] cursor-pointer"
+            src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h6 class="font-bold text-lg mb-8 text-white">Company</h6>
+        <div class="flex flex-col text-white text-opacity-60">
+          <a class="link link-hover pb-2 hover:text-white">Home</a>
+          <a class="link link-hover pb-2 hover:text-white">About us</a>
+          <a class="link link-hover pb-2 hover:text-white">Animals</a>
+          <a class="link link-hover pb-2 hover:text-white">Foundation</a>
+          <a class="link link-hover pb-2 hover:text-white">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="font-bold text-xl mb-6">Drop A Message</h6>
+        <div class="flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            class="input input-bordered bg-gray-800"
+          />
+          <div
+            class="btn bg-primary-color text-white border-black hover:bg-transparent hover:border hover:border-teal-900 hover:text-primary-color"
+          >
+            Subscribe
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Ends Here -->
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn hidden" onclick="customModal.showModal()">
+      open modal
+    </button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="modal-content"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+              class="btn bg-primary-color text-white hover:bg-transparent hover:border-teal-900 hover:text-primary-color"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn hidden" onclick="customModal.showModal()">
+      open modal
+    </button>
+    <dialog id="customModal2" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="modal-content"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- scripts -->
+    <script src="scripts/pet.js"></script>
+  </body>
+</html>
